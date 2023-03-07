@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Phlox Pro - Business 2 Demo</title>
+  <link rel="icon" href="./images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="addPaddingTopToHeader()">
+  
+  <!-- Fixed Position Navigation Container start -->
+  <div class="fixedPositionNavContainer">
+
+    <!-- Secondary Navigation Bar start -->
+    <div class="secondaryNavBar">
+      <div class="secondaryMenu1">
+        <i class="fa-solid fa-phone" id="secondaryMenu1PhoneIcon"></i>
+        <p class="secondaryMenu1P">(001) 88451234 88455438</p>
+      </div>
+      <div class="secondaryMenu2">
+        <i class="fa-brands fa-facebook-f" id="secondaryMenu2facebookIcon"></i>
+        <i class="fa-brands fa-twitter" id="secondaryMenu2twitterIcon"></i>
+        <i class="fa-brands fa-pinterest-p" id="secondaryMenu2pinterestIcon"></i>
+      </div>
+    </div>
+    <!-- Secondary Navigation Bar end -->
+
+    <!-- Primary Navigation Bar start -->
+    <div class="primaryNavBar">
+      <div class="primaryNavBarLogoDiv">
+        <a href="./index.html"><img src="./images/logoImage.png" alt="logo"></a>
+      </div>
+      
+      <i class="fa-solid fa-bars" id="menuIcon" onclick="menuIconClicked()">
+      </i>
+
+      <ul class="primaryNavBarMenu">
+        <li>
+          <a class="primaryNavBarMenuLink" href="#">HOME</a></li>
+        <li>
+          <a class="primaryNavBarMenuLink" href="#">ABOUT</a></li>
+        <li>
+          <a class="primaryNavBarMenuLink" href="#">SERVICES</a></li>
+        <li>
+          <a class="primaryNavBarMenuLink" href="#">SHOWCASE</a></li>
+        <li>
+          <a class="primaryNavBarMenuLink" href="#">BLOG</a></li>
+        <li>
+          <a class="primaryNavBarMenuLink" href="#">CONTACT</a></li>
+      </ul>
+      
+      <ul class="modalMenu">
+        <li>      
+          <i class="fa-regular fa-circle-xmark" id="xmarkIcon" onclick="xmarkIconClicked()">
+          </i></li>
+        <li>
+          <a class="modalMenuLink" href="#" onclick="closeModalMenu()">HOME</a></li>
+        <li>
+          <a class="modalMenuLink" href="#" onclick="closeModalMenu()">ABOUT</a></li>
+        <li>
+          <a class="modalMenuLink" href="#" onclick="closeModalMenu()">SERVICES</a></li>
+        <li>
+          <a class="modalMenuLink" href="#" onclick="closeModalMenu()">SHOWCASE</a></li>
+        <li>
+          <a class="modalMenuLink" href="#" onclick="closeModalMenu()">BLOG</a></li>
+        <li>
+          <a class="modalMenuLink" href="#" onclick="closeModalMenu()">CONTACT</a></li>
+      </ul>
+
+      <div class="primaryNavBarPurchaseNsearch">
+        <button type="button" class="primaryNavBarPurchaseButton">
+          PURCHASE</button>
+        <i class="fa-solid fa-magnifying-glass"
+          id="primaryNavBarSearchIcon"></i>
+      </div>
+    </div>
+    <!-- Primary Navigation Bar end -->
+
+  </div>
+  <!-- Fixed Position Navigation Container end -->
+
+  <!-- Header start --> 
+  <div class="header">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" style="overflow-x: hidden;">
+          <div class="headerFlexContainer1">
+            <div class="headerFlexContainer1left">
+              <h2 class="headerFlexContainer1leftH2" data-aos="fade-right" data-aos-duration="3000">17 YEARS OF EXPERIENCE</h2>
+              <h1 class="headerFlexContainer1leftH1" data-aos="fade-up" data-aos-duration="3000">We Are a</h1>
+              <h1 class="headerFlexContainer1leftH1" data-aos="fade-up" data-aos-duration="3000">Web Design 
+                <span class="h1span">Agency</span></h1>
+              <img class="h1pdivider" src="./images/header/divider.png" alt="divider"
+                data-aos="fade-left" data-aos-duration="3000" />
+              <p class="headerFlexContainer1leftP" data-aos="zoom-out" data-aos-duration="3000">Far far away, behind the word mountains, far from the 
+                countries Vokalia and Consonantia, there live the blind
+                texts. Separated they live in Bookmarksgrove right at 
+                the coast of the Semantics, a large language ocean.
+                Separated they live in Bookmarksgrove.
+              </p>
+              <button class="readMoreButton" type="button" data-aos="zoom-out" data-aos-duration="3000">READ MORE</button>
+              <div class="socialDivHeader" data-aos="fade-left" data-aos-duration="3000">
+                <a class="socialDivHeaderLink" href="#">Facebook</a>
+                <a class="socialDivHeaderLink" href="#">Instagram</a>
+                <a class="socialDivHeaderLink" href="#">Twitter</a>
+                <a class="socialDivHeaderLink" href="#">YouTube</a>
+              </div>
+            </div>
+            <div class="headerFlexContainer1right">
+              <div class="circlediv1">
+                <img class="circleImage1" src="./images/header/right1.png" alt="Image" />
+                <div class="oval1" data-aos="fade-left" data-aos-duration="3000"></div>
+                <div class="oval2" data-aos="fade-left" data-aos-duration="3000"></div>
+                <div class="oval3" data-aos="fade-left" data-aos-duration="3000"></div>
+                <div class="oval4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="overflow-x: hidden;">
+          <div class="headerFlexContainer1">
+            <div class="headerFlexContainer1left">
+              <h2 class="headerFlexContainer1leftH2" data-aos="fade-right" data-aos-duration="3000">17 YEARS OF EXPERIENCE</h2>
+              <h1 class="headerFlexContainer1leftH1" data-aos="fade-up" data-aos-duration="3000">A Group of</h1>
+              <h1 class="headerFlexContainer1leftH1" data-aos="fade-up" data-aos-duration="3000">Expert 
+                <span class="h1span">Planners</span></h1>
+              <img class="h1pdivider" src="./images/header/divider.png" alt="divider"
+                data-aos="fade-left" data-aos-duration="3000" />
+              <p class="headerFlexContainer1leftP" data-aos="zoom-out" data-aos-duration="3000">Far far away, behind the word mountains, far from the 
+                countries Vokalia and Consonantia, there live the blind
+                texts. Separated they live in Bookmarksgrove right at 
+                the coast of the Semantics, a large language ocean.
+                Separated they live in Bookmarksgrove.
+              </p>
+              <button class="readMoreButton" type="button" data-aos="zoom-out" data-aos-duration="3000">READ MORE</button>
+              <div class="socialDivHeader" data-aos="fade-left" data-aos-duration="3000">
+                <a class="socialDivHeaderLink" href="#">Facebook</a>
+                <a class="socialDivHeaderLink" href="#">Instagram</a>
+                <a class="socialDivHeaderLink" href="#">Twitter</a>
+                <a class="socialDivHeaderLink" href="#">YouTube</a>
+              </div>
+            </div>
+            <div class="headerFlexContainer1right">
+              <div class="circlediv1">
+                <img class="circleImage1" src="./images/header/right2.png" alt="Image" />
+                <div class="oval1" data-aos="fade-left" data-aos-duration="3000"></div>
+                <div class="oval2" data-aos="fade-left" data-aos-duration="3000"></div>
+                <div class="oval3" data-aos="fade-left" data-aos-duration="3000"></div>
+                <div class="oval4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="overflow-x: hidden;">
+          <div class="headerFlexContainer1">
+            <div class="headerFlexContainer1left">
+              <h2 class="headerFlexContainer1leftH2" data-aos="fade-right" data-aos-duration="3000">17 YEARS OF EXPERIENCE</h2>
+              <h1 class="headerFlexContainer1leftH1" data-aos="fade-up" data-aos-duration="3000">Focus</h1>
+              <h1 class="headerFlexContainer1leftH1" data-aos="fade-up" data-aos-duration="3000">On Your 
+                <span class="h1span">Business</span></h1>
+              <img class="h1pdivider" src="./images/header/divider.png" alt="divider"
+                data-aos="fade-left" data-aos-duration="3000" />
+              <p class="headerFlexContainer1leftP" data-aos="zoom-out" data-aos-duration="3000">Far far away, behind the word mountains, far from the 
+                countries Vokalia and Consonantia, there live the blind
+                texts. Separated they live in Bookmarksgrove right at 
+                the coast of the Semantics, a large language ocean.
+                Separated they live in Bookmarksgrove.
+              </p>
+              <button class="readMoreButton" type="button" data-aos="zoom-out" data-aos-duration="3000">READ MORE</button>
+              <div class="socialDivHeader" data-aos="fade-left" data-aos-duration="3000">
+                <a class="socialDivHeaderLink" href="#">Facebook</a>
+                <a class="socialDivHeaderLink" href="#">Instagram</a>
+                <a class="socialDivHeaderLink" href="#">Twitter</a>
+                <a class="socialDivHeaderLink" href="#">YouTube</a>
+              </div>
+            </div>
+            <div class="headerFlexContainer1right">
+              <div class="circlediv1">
+                <img class="circleImage1" src="./images/header/right3.png" alt="Image" />
+                <div class="oval1" data-aos="fade-left" data-aos-duration="3000"></div>
+                <div class="oval2" data-aos="fade-left" data-aos-duration="3000"></div>
+                <div class="oval3" data-aos="fade-left" data-aos-duration="3000"></div>
+                <div class="oval4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+    <!-- headerFlexContainer1 start -->
+    <!-- <div class="headerFlexContainer1">
+      <div class="headerFlexContainer1left">
+        <h2 class="headerFlexContainer1leftH2" data-aos="fade-right" data-aos-duration="3000">17 YEARS OF EXPERIENCE</h2>
+        <h1 class="headerFlexContainer1leftH1" data-aos="fade-up" data-aos-duration="3000">We Are a</h1>
+        <h1 class="headerFlexContainer1leftH1" data-aos="fade-up" data-aos-duration="3000">Web Design 
+          <span class="h1span">Agency</span></h1>
+        <img class="h1pdivider" src="./images/header/divider.png" alt="divider"
+          data-aos="fade-left" data-aos-duration="3000" />
+        <p class="headerFlexContainer1leftP" data-aos="zoom-out" data-aos-duration="3000">Far far away, behind the word mountains, far from the 
+          countries Vokalia and Consonantia, there live the blind
+           texts. Separated they live in Bookmarksgrove right at 
+           the coast of the Semantics, a large language ocean.
+           Separated they live in Bookmarksgrove.
+        </p>
+        <button class="readMoreButton" type="button" data-aos="zoom-out" data-aos-duration="3000">READ MORE</button>
+        <div class="socialDivHeader" data-aos="fade-left" data-aos-duration="3000">
+          <a class="socialDivHeaderLink" href="#">Facebook</a>
+          <a class="socialDivHeaderLink" href="#">Instagram</a>
+          <a class="socialDivHeaderLink" href="#">Twitter</a>
+          <a class="socialDivHeaderLink" href="#">YouTube</a>
+        </div>
+      </div>
+      <div class="headerFlexContainer1right">
+        <div class="circlediv1">
+          <img class="circleImage1" src="./images/header/right1.png" alt="Image" />
+          <div class="oval1" data-aos="fade-left" data-aos-duration="3000"></div>
+          <div class="oval2" data-aos="fade-left" data-aos-duration="3000"></div>
+          <div class="oval3" data-aos="fade-left" data-aos-duration="3000"></div>
+          <div class="oval4"></div>
+        </div>
+      </div>
+    </div> -->
+    <!-- headerFlexContainer1 end -->
+
+    <!-- headerFlexContainer2 start -->
+    <!-- <div class="headerFlexContainer1">
+      <div class="headerFlexContainer1left">
+        <h2 class="headerFlexContainer1leftH2" data-aos="fade-right" data-aos-duration="3000">17 YEARS OF EXPERIENCE</h2>
+        <h1 class="headerFlexContainer1leftH1" data-aos="fade-up" data-aos-duration="3000">A Group of</h1>
+        <h1 class="headerFlexContainer1leftH1" data-aos="fade-up" data-aos-duration="3000">Expert 
+          <span class="h1span">Planners</span></h1>
+        <img class="h1pdivider" src="./images/header/divider.png" alt="divider"
+          data-aos="fade-left" data-aos-duration="3000" />
+        <p class="headerFlexContainer1leftP" data-aos="zoom-out" data-aos-duration="3000">Far far away, behind the word mountains, far from the 
+          countries Vokalia and Consonantia, there live the blind
+           texts. Separated they live in Bookmarksgrove right at 
+           the coast of the Semantics, a large language ocean.
+           Separated they live in Bookmarksgrove.
+        </p>
+        <button class="readMoreButton" type="button" data-aos="zoom-out" data-aos-duration="3000">READ MORE</button>
+        <div class="socialDivHeader" data-aos="fade-left" data-aos-duration="3000">
+          <a class="socialDivHeaderLink" href="#">Facebook</a>
+          <a class="socialDivHeaderLink" href="#">Instagram</a>
+          <a class="socialDivHeaderLink" href="#">Twitter</a>
+          <a class="socialDivHeaderLink" href="#">YouTube</a>
+        </div>
+      </div>
+      <div class="headerFlexContainer1right">
+        <div class="circlediv1">
+          <img class="circleImage1" src="./images/header/right2.png" alt="Image" />
+          <div class="oval1" data-aos="fade-left" data-aos-duration="3000"></div>
+          <div class="oval2" data-aos="fade-left" data-aos-duration="3000"></div>
+          <div class="oval3" data-aos="fade-left" data-aos-duration="3000"></div>
+          <div class="oval4"></div>
+        </div>
+      </div>
+    </div> -->
+    <!-- headerFlexContainer2 end -->
+
+    <!-- headerFlexContainer3 start -->
+    <!-- <div class="headerFlexContainer1">
+      <div class="headerFlexContainer1left">
+        <h2 class="headerFlexContainer1leftH2" data-aos="fade-right" data-aos-duration="3000">17 YEARS OF EXPERIENCE</h2>
+        <h1 class="headerFlexContainer1leftH1" data-aos="fade-up" data-aos-duration="3000">Focus</h1>
+        <h1 class="headerFlexContainer1leftH1" data-aos="fade-up" data-aos-duration="3000">On Your 
+          <span class="h1span">Business</span></h1>
+        <img class="h1pdivider" src="./images/header/divider.png" alt="divider"
+          data-aos="fade-left" data-aos-duration="3000" />
+        <p class="headerFlexContainer1leftP" data-aos="zoom-out" data-aos-duration="3000">Far far away, behind the word mountains, far from the 
+          countries Vokalia and Consonantia, there live the blind
+          texts. Separated they live in Bookmarksgrove right at 
+          the coast of the Semantics, a large language ocean.
+          Separated they live in Bookmarksgrove.
+        </p>
+        <button class="readMoreButton" type="button" data-aos="zoom-out" data-aos-duration="3000">READ MORE</button>
+        <div class="socialDivHeader" data-aos="fade-left" data-aos-duration="3000">
+          <a class="socialDivHeaderLink" href="#">Facebook</a>
+          <a class="socialDivHeaderLink" href="#">Instagram</a>
+          <a class="socialDivHeaderLink" href="#">Twitter</a>
+          <a class="socialDivHeaderLink" href="#">YouTube</a>
+        </div>
+      </div>
+      <div class="headerFlexContainer1right">
+        <div class="circlediv1">
+          <img class="circleImage1" src="./images/header/right3.png" alt="Image" />
+          <div class="oval1" data-aos="fade-left" data-aos-duration="3000"></div>
+          <div class="oval2" data-aos="fade-left" data-aos-duration="3000"></div>
+          <div class="oval3" data-aos="fade-left" data-aos-duration="3000"></div>
+          <div class="oval4"></div>
+        </div>
+      </div>
+    </div> -->
+    <!-- headerFlexContainer3 end -->
+
+  </div>
+  <!-- Header end -->
+
+  <!-- Second Section start -->
+  <div class="secondSection">
+    <div class="secondSectionFlex1">
+      <h3 class="secondSectionFlex1H3first" data-aos="fade-right" data-aos-duration="3000">We Are Here To</h3>
+      <h3 class="secondSectionFlex1H3second" data-aos="fade-right" data-aos-duration="3000">Make Your <span class="h1span">Website</span></h3>
+      <h3 class="secondSectionFlex1H3third" data-aos="fade-left" data-aos-duration="3000">Look More <span class="h1span">Elegant</span>
+         And Stylish!</h3>
+      <img class="secondSectiondivider" src="./images/header/divider.png" alt="divider"
+        data-aos="fade-left" data-aos-duration="3000" />
+      <button class="readMoreButton" type="button" 
+        data-aos="zoom-out" data-aos-duration="3000">
+        VIEW ALL</button>
+    </div>
+    <div class="secondSectionFlex2">
+      <div class="secondSectionCard" data-aos="fade-left" data-aos-duration="3000">
+        <i class="fa-solid fa-gauge-high" id="secondSectionCardspeedIcon"></i>
+        <h4 class="secondSectionCardH4">Speed Optimisation</h4>
+        <p class="secondSectionCardP">Far far away, behind the
+           word mountains, far from 
+           the countries Vokalia 
+           Separated...</p>
+      </div>
+      <div class="secondSectionCard" data-aos="fade-left" data-aos-duration="3000">
+        <i class="fa-solid fa-mobile-screen-button" id="secondSectionCardmobileIcon"></i>
+        <h4 class="secondSectionCardH4">Website Design</h4>
+        <p class="secondSectionCardP">Far far away, behind the
+          word mountains, far from 
+          the countries Vokalia 
+          Separated...</p>
+      </div>
+    </div>
+    <div class="secondSectionFlex3">
+      <div class="secondSectionCard" data-aos="fade-left" data-aos-duration="3000">
+        <i class="fa-solid fa-cloud" id="secondSectionCardcloudIcon"></i>
+        <h4 class="secondSectionCardH4">Cloud Solutions</h4>
+        <p class="secondSectionCardP">Far far away, behind the
+          word mountains, far from 
+          the countries Vokalia 
+          Separated...</p>
+      </div>
+      <div class="secondSectionCard" data-aos="fade-left" data-aos-duration="3000">
+        <i class="fa-solid fa-stopwatch" id="secondSectionCardstopwatchIcon"></i>
+        <h4 class="secondSectionCardH4">Online Marketing</h4>
+        <p class="secondSectionCardP">Far far away, behind the
+          word mountains, far from 
+          the countries Vokalia 
+          Separated...</p>
+      </div>
+    </div>
+  </div>
+  <!-- Second Section end -->
+
+  <!-- Third Section start -->
+  <div class="thirdSection">
+    <div class="thirdSectionLeft">
+      <img class="thirdSectionImg1" src="./images/thirdSection/architect.png" data-aos="fade-right" data-aos-duration="3000">
+      <img class="thirdSectionImg2" src="./images/thirdSection/girl.png" data-aos="fade-left" data-aos-duration="3000">
+    </div>
+    <div class="thirdSectionRight">
+      <h5 class="thirdSectionRightH5" data-aos="fade-left" data-aos-duration="3000">learn more about our 
+        <span class="h1span">missions</span></h5>
+      <img class="thirdSectiondivider" src="./images/header/divider.png" alt="divider"
+        data-aos="fade-left" data-aos-duration="3000" />
+      <p class="thirdSectionRightP" data-aos="fade-right" data-aos-duration="3000">Far far away, behind the word mountains, far from
+         the countries Vokalia and Consonantia, there live the blind texts. Separated
+          they live in Bookmarksgrove right at the coast of the Semantics, a large 
+          language ocean.Separated they live in Bookmarksgrove.</p>
+      <button class="thirdSectionRightbutton" type="button" 
+        data-aos="zoom-out" data-aos-duration="3000">
+        READ MORE</button>
+    </div>
+  </div>
+  <!-- Third Section end -->
+
+  <!-- Fourth Section start -->
+  <div class="fourthSection">
+    <div class="fouthSectionTop">
+      <div class="fouthSectionTopLeft">
+        <img class="fourthSectiondivider" src="./images/header/divider.png" alt="divider"
+          data-aos="fade-left" data-aos-duration="3000" />
+        <h3 class="fourthSectionH3" data-aos="fade-right" data-aos-duration="3000">Our recent <span class="h1span">web designs</span> &</h3>
+        <h3 class="fourthSectionH3" data-aos="fade-right" data-aos-duration="3000">some examples of</h3>
+        <h3 class="fourthSectionH3last" data-aos="fade-right" data-aos-duration="3000">past <span class="h1span">projects</span></h3>
+        <img class="fourthSectiondivider" src="./images/header/divider.png" alt="divider"
+          data-aos="fade-left" data-aos-duration="3000" />
+      </div>
+      <div class="fouthSectionTopRight">
+        <p class="fouthSectionTopRightP" data-aos="fade-left" data-aos-duration="3000">Far far away, behind the word mountains, far from the 
+          countries Vokalia and Consonantia, there live the blind
+           texts. Separated they live in Bookmarksgrove right at
+            the coast of the Semantics, a large language ocean.
+            Separated they live in Bookmarksgrove.Far far away,
+             behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+               Separated they live in Bookmarksgrove.</p>
+      </div>
+    </div>
+    <div class="fourthSectionImageRow">
+      <img data-aos="fade-left" data-aos-duration="3000" class="fourthSectionImage" src="./images/fourthSection/img1.png">
+      <img data-aos="fade-left" data-aos-duration="3000" class="fourthSectionImage" src="./images/fourthSection/img2.png">
+      <img data-aos="fade-left" data-aos-duration="3000" class="fourthSectionImage" src="./images/fourthSection/img3.png">
+      <img data-aos="fade-left" data-aos-duration="3000" class="fourthSectionImage" src="./images/fourthSection/img4.png">
+    </div>
+    <div class="fourthSectionImageRow">
+      <img data-aos="fade-right" data-aos-duration="3000" class="fourthSectionImage" src="./images/fourthSection/img5.png">
+      <img data-aos="fade-right" data-aos-duration="3000" class="fourthSectionImage" src="./images/fourthSection/img6.png">
+      <img data-aos="fade-right" data-aos-duration="3000" class="fourthSectionImage" src="./images/fourthSection/img7.png">
+      <img data-aos="fade-right" data-aos-duration="3000" class="fourthSectionImage" src="./images/fourthSection/img8.png">
+    </div>
+    <div class="fourthSectionbuttondiv">
+      <button class="fourthSectionbutton" type="button" 
+          data-aos="zoom-out" data-aos-duration="3000">
+          READ MORE</button>
+    </div>
+  </div>
+  <!-- Fourth Section end -->
+  
+  <!-- Fifth Section start -->
+  <div class="fifthSection">
+    <div class="fifthSectionLeft"
+      data-aos="fade-right" data-aos-duration="3000">
+      <div>
+        <p class="fifthSectionLeftP1">280</p>
+        <p class="fifthSectionLeftP2">PROJECTS</p>
+      </div>
+      <div>
+        <p class="fifthSectionLeftP3">
+          <span class="fifthSectionPspan">+3500</span><br>
+           USERS' COMMENTS</p>
+        <P class="fifthSectionLeftP4">
+          <span class="fifthSectionPspan">100%</span><br>
+           HAPPY CLIENTS</P>
+      </div>
+    </div>
+    <div class="fifthSectionRight"
+      data-aos="fade-left" data-aos-duration="3000">
+      <h3 class="fifthSectionRightH3">We Love What</h3>
+      <h3 class="fifthSectionRightH3">We Do</h3>
+      <img class="fifthSectiondivider" src="./images/header/divider.png" alt="divider"
+          data-aos="fade-left" data-aos-duration="3000" />
+      <p class="fifthSectionRightP1">Far far away, behind the word mountains, far from the 
+         countries Vokalia and Consonantia, there live the blind
+         texts. Separated they live in Bookmarksgrove right at
+         the coast of the Semantics, a large language ocean.
+          Separated they live in Bookmarksgrove. Far far away,
+           behind the word mountains. large language ocean. 
+           far from the countries Vokalia and Consonantia</p>
+      <p class="fifthSectionRightP2">
+        <i class="fa-solid fa-check" id="fa-check"></i>
+        far far away, behind the word mountains</p>
+      <p class="fifthSectionRightP3">
+        <i class="fa-solid fa-check" id="fa-check"></i>
+        large language ocean</p>
+      <p class="fifthSectionRightP4">
+        <i class="fa-solid fa-check" id="fa-check"></i>
+        far from the countries Vokalia and Consonantia</p>
+    </div>
+  </div>
+  <!-- Fifth Section end -->
+
+  <!-- Sixth Section start -->
+  <div class="sixthSection">
+    <div class="sixthSectionChild1">
+      <h3 class="sixthSectionChild1H3">With <span class="h1span">Live Chat</span></h3>
+      <h3 class="sixthSectionChild1H3second"><span class="h1span">24/7</span> Support</h3>
+      <img class="sixthSectiondivider" src="./images/header/divider.png" alt="divider" />
+      <p class="sixthSectionChild1P">Far far away, behind the word mountains, far from the 
+        countriesVokalia and Consonantia, there live the blind 
+        texts. Separated they live in Bookmarksgrove right at 
+        the coast of the Semantics.</p>
+    </div>
+    <div class="sixthSectionChild2">
+      <div class="sixthSectionChild2Top">
+        <div class="sixthSectionChild2Title">
+          <h3 class="sixthSectionChild2TitleH3">DESIGNING</h3>
+          <p class="sixthSectionChild2TitleP">All Designs</p>
+        </div>
+        <p class="sixthSectionChild2TopP">
+          $<span class="TopPspan">13</span> / Design</p>
+      </div>
+      <div class="sixthSectionChild2Bottom">
+        <p class="sixthSectionChild2BottomP1">
+          <i class="fa-solid fa-check"></i>
+          Creative Design Enabled
+        </p>
+        <p class="sixthSectionChild2BottomP2">
+          <i class="fa-solid fa-check"></i>
+          Vibrant Color Usage
+        </p>
+        <p class="sixthSectionChild2BottomP3">
+          <i class="fa-solid fa-check"></i>
+          Eye Catching Design
+        </p>
+        <p class="sixthSectionChild2BottomP4">
+          <i class="fa-solid fa-check"></i>
+          Extreme Typography
+        </p>
+        <p class="sixthSectionChild2BottomP5">
+          <i class="fa-solid fa-check"></i>
+          Exceptional Design
+        </p>
+      </div>
+    </div>
+    <div class="sixthSectionChild3">
+      <div class="sixthSectionChild3Top">
+        <div class="sixthSectionChild3Title">
+          <h3 class="sixthSectionChild3TitleH3">DEVELOPMENT</h3>
+          <p class="sixthSectionChild3TitleP">WordPress Projects</p>
+        </div>
+        <p class="sixthSectionChild3TopP">$ <span class="TopPspan">15</span> / Project</p>
+      </div>
+      <div class="sixthSectionChild3Bottom">
+        <p class="sixthSectionChild3BottomP1">
+          <i class="fa-solid fa-check"></i>
+          Creative Design Enabled
+        </p>
+        <p class="sixthSectionChild3BottomP2">
+          <i class="fa-solid fa-check"></i>
+          Vibrant Color Usage
+        </p>
+        <p class="sixthSectionChild3BottomP3">
+          <i class="fa-solid fa-check"></i>
+          Eye Catching Design
+        </p>
+        <p class="sixthSectionChild3BottomP4">
+          <i class="fa-solid fa-check"></i>
+          Extreme Typography
+        </p>
+        <p class="sixthSectionChild3BottomP5">
+          <i class="fa-solid fa-check"></i>
+          Exceptional Design
+        </p>
+      </div>
+    </div>
+    <div class="sixthSectionChild4">
+      <div class="sixthSectionChild4Top">
+        <div class="sixthSectionChild4Title">
+          <h3 class="sixthSectionChild4TitleH3">SEO</h3>
+          <p class="sixthSectionChild4TitleP">Web Products</p>
+        </div>
+        <p class="sixthSectionChild4TopP">$ <span class="TopPspan">10</span> / Design</p>
+      </div>
+      <div class="sixthSectionChild4Bottom">
+        <p class="sixthSectionChild4BottomP1">
+          <i class="fa-solid fa-check"></i>
+          Creative Design Enabled
+        </p>
+        <p class="sixthSectionChild4BottomP2">
+          <i class="fa-solid fa-check"></i>
+          Vibrant Color Usage
+        </p>
+        <p class="sixthSectionChild4BottomP3">
+          <i class="fa-solid fa-check"></i>
+          Eye Catching Design
+        </p>
+        <p class="sixthSectionChild4BottomP4">
+          <i class="fa-solid fa-check"></i>
+          Extreme Typography
+        </p>
+        <p class="sixthSectionChild4BottomP5">
+          <i class="fa-solid fa-check"></i>
+          Exceptional Design
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Sixth Section end -->
+
+  <!-- Seventh Section start -->
+  <div class="seventhSection">
+    <div class="seventhSectionSubContainer">
+      <i class="fa-solid fa-quote-left" id="quoteLeft"></i>
+      <p class="seventhSectionP1">When it comes to barbequing, there are two main schools of 
+        thought for the techniques that you can use. Freshly scrambled 
+        eggs with applewood smoked bacon - are amazing!</p>
+      <img class="seventhSectionImg1" src="./images/seventhSection/img1.png" alt="client">
+      <h2 class="seventhSectionH2">LISSA DURBIN</h2>
+      <p class="seventhSectionP2">Client</p>
+    </div>
+  </div>
+  <!-- Seventh Section end -->
+
+  <!-- Eighth Section start -->
+  <div class="eighthSection">
+
+    <h3 class="eighthSectionH3">Latest News & Our <span class="highlight">Blog</span></h3>
+    <img class="eighthSectiondivider" src="./images/header/divider.png">
+
+    <div class="eighthSectionFlex">
+
+      <div class="eighthSectionFlexChild1">
+        <img class="eighthSectionFlexChild1image" src="./images/eighthSection/img1.png">
+        <div class="eighthSectionFlexChild1card">
+          <p class="eighthSectionFlexChild1p1">May 24, 2018 by Alex</p>
+          <p class="eighthSectionFlexChild1p2">
+            <i class="fa-solid fa-circle" id="eighthSectionDot"></i>
+            Marketing Ideas
+          </p>
+        </div>
+      </div>
+
+      <div class="eighthSectionFlexChild2">
+        <img class="eighthSectionFlexChild2image" src="./images/eighthSection/img2.png">
+        <div class="eighthSectionFlexChild2card">
+          <p class="eighthSectionFlexChild2p1">May 24, 2018 by Alex</p>
+          <p class="eighthSectionFlexChild2p2">
+            <i class="fa-solid fa-circle" id="eighthSectionDot"></i>
+            Rest During Working Hours
+          </p>
+        </div>
+      </div>
+
+      <div class="eighthSectionFlexChild3">
+        <img class="eighthSectionFlexChild3image" src="./images/eighthSection/img3.png"\>
+        <div class="eighthSectionFlexChild3card">
+          <p class="eighthSectionFlexChild3p1">May 24, 2018 by Alex</p>
+          <p class="eighthSectionFlexChild3p2">
+            <i class="fa-solid fa-circle" id="eighthSectionDot"></i>
+            Develop Your Startup Idea
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="eighthSectionbutton" type="button" 
+          data-aos="zoom-out" data-aos-duration="3000">
+          VIEW ALL POST</button>
+
+  </div>
+  <!-- Eighth Section end -->
+
+  <!-- Ninth Section start -->
+  <div class="ninthSection">
+
+    <div class="ninthSectionLeft"
+      data-aos="fade-right" data-aos-duration="3000">
+      <h2 class="ninthSectionLeftH2">Are You Ready?</h2>
+      <h3 class="ninthSectionLeftH3">Start a New Project</h3>
+      <form action="" onsubmit="event.preventDefault()">
+        <input class="ninthSectionLeftinput" type="text"
+          placeholder="Enter Your Email Address" required>
+        <button class="ninthSectionLeftsubmitButton" type="submit"
+          >SUBMIT</button>
+      </form>
+    </div>
+
+    <div class="ninthSectionRight"
+      data-aos="fade-left" data-aos-duration="3000">
+      <h2 class="ninthSectionRightH2">What Are You Waiting for?</h2>
+      <h3 class="ninthSectionRightH3">Let's Talk About Work</h3>
+      <button class="eighthSectionbutton" type="button" 
+          data-aos="zoom-out" data-aos-duration="3000">
+          START NOW</button>
+    </div>
+
+  </div>
+  <!-- Ninth Section end -->
+
+  <!-- Tenth Section start -->
+  <div class="tenthSection">
+    <img class="tenthSectionimg1" src="./images/tenthSection/img1.png">
+    <img class="tenthSectionimg2" src="./images/tenthSection/img2.png">
+    <img class="tenthSectionimg3" src="./images/tenthSection/img3.png">
+    <img class="tenthSectionimg4" src="./images/tenthSection/img4.png">
+    <img class="tenthSectionimg5" src="./images/tenthSection/img5.png">
+    <img class="tenthSectionimg6" src="./images/tenthSection/img6.png">
+  </div>
+  <!-- Tenth Section end -->
+
+  <!-- Top Footer start -->
+  <div class="topfooter">
+
+    <div class="topfooterflexitem1">
+      <img class="topfooterflexitem1img" src="./images/logoImage.png">
+      <p class="topfooterflexitem1p">While the lovely valley teems with vapour around me,
+         and the meridian sun strikes the upper surface of the
+          impenetrable foliage of my trees.While the lovely valley
+           teems with vapour around me.</p>
+    </div>
+
+    <div class="topfooterflexitem2">
+      <h6 class="topfooterflexitem2h6">QUICK LINKS</h6>
+      <img class="topfooterflexitem2img" src="./images/header/divider.png">
+      <ul class="topfooterflexitem2ul">
+        <li><a class="topfooterflexitem2link" href="">Careers</a></li>
+        <li><a class="topfooterflexitem2link" href="">News</a></li>
+        <li><a class="topfooterflexitem2link" href="">Terms of use</a></li>
+        <li><a class="topfooterflexitem2link" href="">Privacy Projects</a></li>
+        <li><a class="topfooterflexitem2link" href="">About</a></li>
+        <li><a class="topfooterflexitem2link" href="">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="topfooterflexitem3">
+      <h5 class="topfooterflexitem3h5">CONTACT</h5>
+      <img class="topfooterflexitem3img" src="./images/header/divider.png">
+      <p class="topfooterflexitem3p1">Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville,
+        TX 76051</p>
+      <p class="topfooterflexitem3p2">info@yourdomain.com</p>
+      <p class="topfooterflexitem3p3">+99 (0) 101 0000 888</p>
+    </div>
+
+    <div class="topfooterflexitem4">
+      <h6 class="topfooterflexitem4h6">LOCATION ON MAP</h6>
+      <img class="topfooterflexitem4img" src="./images/header/divider.png">
+      <div class="mapdiv">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48388.68711223663!2d-74.00062685979988!3d40.71156721461238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2e3b75514b%3A0x7be54ad37a019fcf!2sManhattan%20Bridge!5e0!3m2!1sen!2s!4v1677866136939!5m2!1sen!2s" 
+          width="287" height="209" style="border:0;" allowfullscreen="" 
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+  <!-- Top Footer end -->
+
+  <!-- Bottom Footer start -->
+  <div class="bottomfooter">
+    <div class="bottomfooterleft">
+      <p class="bottomfooterleftp">
+        © 2023 PHLOX BUSINESS THEME.
+      </p>
+    </div>
+    <div class="bottomfooterright">
+      <i class="fa-brands fa-facebook-f" id="secondaryMenu2facebookIcon"></i>
+      <i class="fa-brands fa-twitter" id="secondaryMenu2twitterIcon"></i>
+      <i class="fa-brands fa-pinterest-p" id="secondaryMenu2pinterestIcon"></i>
+    </div>
+  </div>
+  <!-- Bottom Footer end -->
+
+  <!-- Arrow up start -->
+  <a href="#">
+    <i class="fa-solid fa-arrow-up" id="arrowuplink"></i>
+  </a>
+  <!-- Arrow up end -->
+
+  <!-- Chat start -->
+  <i class="fa-regular fa-comment" id="chatbutton"></i>
+  <!-- Chat end -->
+
+  <!-- Fixed right position links start -->
+  <a class="fixedPositionRightLink1" href="#" onclick="event.preventDefault()">
+    <img src="./images/fixedPositionRightLinks/Group-3.png"
+      class="fixedPositionRightLink1img">
+    Browse Demos
+  </a>
+
+  <a class="fixedPositionRightLink2" href="#" onclick="event.preventDefault()">
+    <i class="fa-solid fa-bag-shopping"></i>
+    Buy Now!
+  </a>
+  
+  <a class="fixedPositionRightLink3" href="#" onclick="event.preventDefault()">
+    <i class="fa-solid fa-file-export"></i>
+    Export Section
+  </a>
+  <!-- Fixed right position links end -->
+</body>
+</html>
