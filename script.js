@@ -31,3 +31,14 @@ const swiper = new Swiper('.swiper', {
   },
 });
 // 
+
+// Counter Animation
+$('.fifthSectionLeftP1').counterUp({
+  delay: 10,
+  time: 2000
+});
+
+$('.fifthSectionCounterspan').counterUp({
+  delay: 10,
+  time: 2000
+});
